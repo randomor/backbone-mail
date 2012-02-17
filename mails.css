@@ -1,0 +1,68 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+#mailApp        {font-family: Helvetica, Arial, sans-serif; margin: 40px auto; background: white; font-size: 12px; line-height: 14px; width: 750px; height: 500px; overflow: hidden; border: 1px solid LightGrey;}
+.mail-thread    {width: 100%; border-bottom: 1px solid LightGrey; padding: 5px;}
+.mail-thread.selected, .mail-thread.selected:hover {background: #3875d7;}
+.mail-thread.selected.fade, .mail-thread.selected.fade:hover {background: #d4d4d4;}
+.mail-thread .description {color: Grey;}
+.mail-thread.selected .description {color: #a3c0ec}
+.mail-thread.selected.fade .description {color: #808080}
+.mail-thread h4 {height: 16px; font-weight: bold; font-size: 12px; font-family: Helvetica, Arial, sans-serif;}
+.mail-thread.selected h4 {color: white;}
+.mail-thread.selected.fade h4 {color: black;}
+.mail-thread:hover {background: Lavender;}
+.list-panel     {float: left; width:30%; height: 100%; overflow-x: hidden; overflow-y: auto }
+.detail-panel   {float: right; height: 100%; width:69%; border-left: 1px solid LightGrey; background: url(linen.jpg) repeat; overflow: auto;}
+.mail-content {margin: 15px 10px; background: white; padding: 8px; box-shadow: 0px 5px 5px #888;}
+.mail-content.selected {box-shadow: 0px 0px 5px 5px #598dce;}
+.mail-content .meta span {display: block; width: 100%;}
+.mail-content .meta span b {color: Grey; font-weight: normal;}
+.mail-content .meta {border-bottom: 1px solid LightGrey; line-height:15px; }
+.mail-content .meta span.subject {font-weight: bold;}
+.mail-content div.attachment b {color: Grey;}
+.mail-content .content {margin: 10px 0px; line-height: 15px;}
+.mail-content .content b {font-weight: bold;}
+.mail-content p {margin-bottom: 14px;}
